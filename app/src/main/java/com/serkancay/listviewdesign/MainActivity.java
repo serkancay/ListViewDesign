@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listView);
         // Kişiler listemizi tanımlayıp içine bilgileri giriyoruz.
         kisiler = new ArrayList<>();
-        kisiler.add(new Kisi("Serkan", "Çay", "Kahramanmaraş", "Java&Android", R.drawable.serkan_profile));
-        kisiler.add(new Kisi("Yaprak", "Kaya", "Kayseri", "PHP", R.drawable.yaprak_profile));
         kisiler.add(new Kisi("Dennis", "Ritchie", "New York", "C", R.drawable.ritchie_profile));
         kisiler.add(new Kisi("James", "Gosling", "Alberta", "Java", R.drawable.gosling_profile));
         kisiler.add(new Kisi("Linus", "Torvalds", "Helsinki", "Linux", R.drawable.torvalds_profile));
