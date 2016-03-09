@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/satir_arkaplan"
+    android:orientation="horizontal"
+    android:padding="5dp">
+    <!-- Profil resmi için bir imageView -->
+    <com.github.siyamed.shapeimageview.OctogonImageView
+        android:id="@+id/ivKisiResmi"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        app:siBorderColor="#3FC380"
+        app:siBorderWidth="1dp" />
+
+    <!-- Ad-Soyad için layout bilgileri layout'u -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#2E7D32" />
+
+            <TextView
+                android:id="@+id/tvSoyad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#2E7D32" />
+        </LinearLayout>
+
+        <!-- Şehir için layout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!-- Burada kullanılan resmi projenize eklemeyi unutmayın -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/city" />
+
+            <TextView
+                android:id="@+id/tvSehir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <!-- İlgi alanları için layout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!-- Burada kullanılan resmi projenize eklemeyi unutmayın -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="3dp"
+                android:src="@drawable/interests" />
+
+            <TextView
+                android:id="@+id/tvIlgiAlani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
